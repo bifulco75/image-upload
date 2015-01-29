@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+      <meta name="description" content="">
+      <meta name="author" content="">
+
+      <title>Manu Upload</title>
+
+      <!-- Google web fonts -->
+      <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel='stylesheet' />
+ 
+      <!-- The main CSS file -->
+      <link href="assets/css/style.css" rel="stylesheet" />
+   </head>
+   <body>
+      <div class='intro'>
+	 <h1>Image upload</h1>
+	 <button id='callbox'>Upload</button>
+      </div>
+      
+      <div id='manu-box'>
+	  <div class='box-inter'>
+	    <div class='header-box-manu'>
+	       <ul>
+		  <li>Upload</li>
+	       </ul>
+	    </div>
+	    
+	    <div class='content-box-manu-up'>
+		
+	       <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+		        <div id="drop">
+				Drop Here<br>
+
+				<a>Browse</a>
+				<input type="file" name="upl" multiple />
+			</div>
+
+			<ul>
+				<!-- The file uploads will be shown here -->
+			</ul>
+
+		</form>
+	        <button id='close'>Close</button>
+	    </div>
+	    
+	  </div>
+      </div>
+  
+       <!-- JavaScript Includes -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+       <script src="assets/js/jquery.knob.js"></script>
+
+	<!-- jQuery File Upload Dependencies -->
+	<script src="assets/js/jquery.ui.widget.js"></script>
+	<script src="assets/js/jquery.iframe-transport.js"></script>
+	<script src="assets/js/jquery.fileupload.js"></script>
+		
+	<!-- Our main JS file -->
+	<script src="assets/js/script.js"></script>
+
+	</body>
+</html>

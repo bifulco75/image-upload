@@ -1,0 +1,62 @@
+
+To add to your template:
+
+1) add the header:
+  <!-- Google web fonts -->
+  <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel='stylesheet' />
+ 
+  <!-- The main CSS file -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+
+2) add the footer:
+
+  <!-- JavaScript Includes -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="assets/js/jquery.knob.js"></script>
+
+  <!-- jQuery File Upload Dependencies -->
+  <script src="assets/js/jquery.ui.widget.js"></script>
+  <script src="assets/js/jquery.iframe-transport.js"></script>
+  <script src="assets/js/jquery.fileupload.js"></script>
+  		
+  <!-- Our main JS file -->
+  <script src="assets/js/script.js"></script>
+
+
+3) add:
+     <div id='manu-box'>
+	  <div class='box-inter'>
+	    <div class='header-box-manu'>
+	       <ul>
+		  <li>Upload</li>
+	       </ul>
+	    </div>
+	    
+	    <div class='content-box-manu-up'>
+		
+	       <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+		        <div id="drop">
+				Drop Here<br>
+
+				<a>Browse</a>
+				<input type="file" name="upl" multiple />
+			</div>
+
+			<ul>
+				<!-- The file uploads will be shown here -->
+			</ul>
+
+		</form>
+	        <button id='close'>Close</button>
+	    </div>
+	    
+	  </div>
+      </div>
+
+4) add button
+<button id='callbox'>Upload</button>
+
+----------------------------
+
+config folder upload. 
+upload.php in the file, you can change the place where they will go the files
